@@ -37,13 +37,6 @@ public class LoginForm extends TransparentPanel {
 	public LoginForm(final LauncherFrame launcherFrame) {
 		this.launcherFrame = launcherFrame;
 
-		// Проверка на чесность Date
-		 Date currentDate = new Date();
-		 if (currentDate.after(new Date(112,01,30))) {
-            System.exit(0);
-        }
-		
-
 		// # Проверяем оффлайн
 		// GameUpdater.dlFile(GameUpdater.URL, "serverList.xml");
 		// if (!(new File(Util.getGameDirectory(""), "serverList.xml").exists())
